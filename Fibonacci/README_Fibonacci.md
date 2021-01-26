@@ -7,8 +7,7 @@ Nesse repositório encontram diversos scripts utilizados para o desenvolvimento 
 
 ### API_fibo.py
 Essa script é responsável por criar o servidor local com a API que calcula o n-ésimo termo da sequÊncia de Fibonacci. A API é encontrada no final /fibonacci da URL e 
-recebe apenas métodos POTS de *request* cujo o corpo é escrito com a sitaxe do JSON, que deve possuir a forma {"n": número}, sendo *número* o termo da sequência que será
-calculado pela API.
+recebe apenas métodos POTS de *request* cujo o corpo é escrito com a sitaxe do JSON, que deve possuir a forma {"n": número}, sendo *número* o termo da sequência que será calculado pela API. A resposta ao usuário é o termo correnspondente na sequência de Fibonacci, em formato JSON {"termo": n_termo}
 
 ### fibo.py
 Esse é um modulo com duas funções que calculam a sequencia de Fibonacci, uma função recursiva e outra iterativa. A função iterativa é a mais eficas e é a utilizada na API.
