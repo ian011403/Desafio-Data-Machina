@@ -1,4 +1,4 @@
-# API para calcular n-ésimo termo da seência de Fibonacci
+# API para calcular n-ésimo termo da sequência de Fibonacci
 
 ## Descrição
 Nesse repositório encontram diversos scripts utilizados para o desenvolvimento da API que calcula o n-ésimo termo da sequência de Fibonacci
