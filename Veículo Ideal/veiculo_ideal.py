@@ -56,55 +56,15 @@ def vec_ide(itens: dict) -> dict:
     lala = criterio_peso_total(lala, entrega)
     ogi = criterio_peso_total(ogi, entrega)
 
-    print("--Criterio Peso Total--")
-    print("-Lista de veiculos da Lala")
-    if lala.veiculos != []:
-        for vec in lala.veiculos:
-            print(vec.tipo)
-    print("-Lista de veiculos da Ogi")
-    if ogi.veiculos != []:
-        for vec in ogi.veiculos:
-            print(vec.tipo)
-
     lala = criterio_volume_total(lala, entrega)
     ogi = criterio_volume_total(ogi, entrega)
-
-    print("--Criterio Volume Total--")
-    print("-Lista de veiculos da Lala")
-    if lala.veiculos != []:
-        for vec in lala.veiculos:
-            print(vec.tipo)
-    print("-Lista de veiculos da Ogi")
-    if ogi.veiculos != []:
-        for vec in ogi.veiculos:
-            print(vec.tipo)
 
     lala = criterio_disposicao(lala, entrega)
     ogi = criterio_disposicao(ogi, entrega)
 
-    print("--Criterio Disposição--")
-    print("-Lista de veiculos da Lala")
-    if lala.veiculos != []:
-        for vec in lala.veiculos:
-            print(vec.tipo)
-    print("-Lista de veiculos da Ogi")
-    if ogi.veiculos != []:
-        for vec in ogi.veiculos:
-            print(vec.tipo)
-
     lala = criterio_capacidade(lala)
     ogi = criterio_capacidade(ogi)
-
-    print("--Criterio Capacidade--")
-    print("-Lista de veiculos da Lala")
-    if lala.veiculos != []:
-        for vec in lala.veiculos:
-            print(vec.tipo)
-    print("-Lista de veiculos da Ogi")
-    if ogi.veiculos != []:
-        for vec in ogi.veiculos:
-            print(vec.tipo)
-
+   
     # O dicionário com a resposta é criado
 
     resposta = faz_dicionario(lala, ogi)
