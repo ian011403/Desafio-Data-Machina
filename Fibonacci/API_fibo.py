@@ -11,7 +11,7 @@ from fibo import Fibo
 
 app = Flask("Fibonacci") # Aqui nomeio a aplicação como "Fibonacci"
 
-# Aqui defino a rota para onde será enviado o requesição POST do protocolo HTTP
+# Aqui defino a rota para onde será enviado a requesição POST do protocolo HTTP. no final /fibonacci da URL local 
 @app.route('/fibonacci', methods= ['POST']) 
 def fibonacci():
     #Defino a uma funcionalidade da aplicação
