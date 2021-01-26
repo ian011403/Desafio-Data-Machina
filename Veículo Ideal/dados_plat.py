@@ -1,6 +1,8 @@
-# Nesse módu defino as funções que transferem os dados dos veiculos
+# Nesse módulo defino as funções que transferem os dados dos veiculos
 # de cada plataforma para a função vec_ide que resolve o problema do
-# veiculo ideal.
+# veiculo ideal. Decidi separar essa atividade em um módulo próprio para 
+# depois tentar criar funções que pudessem consultar arquivos com os veiculos
+# de cada plataforma.
 
 from classes_vec_ide import Veiculo, Plataforma
 
