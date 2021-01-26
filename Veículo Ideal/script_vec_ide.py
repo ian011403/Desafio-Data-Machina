@@ -1,3 +1,6 @@
+# Esse script foi feito com o objetivo de testa a função que determina os veiculos ideiais.
+# Os resultados são apresentados no terminal.
+
 from veiculo_ideal import vec_ide
 
 itens = [
