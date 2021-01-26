@@ -30,11 +30,17 @@ def converte_dict_Itens( itens_info: dict ) -> list:
     return nova_lista
 
 def faz_dicionario( lala: Plataforma, ogi: Plataforma ) -> dict: 
-
+    
+    ''' 
+        Essa função é responsável por criar as respostas que serão retornadas pela função vec_ide(), 
+        que serão transformadas em resposta da API para o usuário
+    '''
+    # Mensages caso os critérios de seleção dos veiculos falhem
     if lala.num_vec > 1: return {'Erro': 'Não selecionou veiculo da Lala'}
     
     if ogi.num_vec  > 1: return {'Erro': 'Não selecionou veiculo da Ogi'}
     
+    #Mensagens caso o problema tenha tido uma solução    
     if lala.num_vec == 0 and ogi.num_vec == 1: 
         return { 'Lala':'Não há veiculo adequado', 'Ogi':ogi.veiculos[0].tipo }
     
