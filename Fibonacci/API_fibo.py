@@ -1,7 +1,10 @@
 
-# Esse script é reponsavel por criar um servidor com uma API local que retorna a n-ésimo
-# termo da sequÊncia de Fibonacci. 
+# Esse script é reponsavel por criar um servidor e uma API local que retorna o n-ésimo
+# termo da sequência de Fibonacci. 
 # Aqui escrevo as funcionalidades da API usando o web framework Flask.
+
+# As requests só podem ser feitas usando método POST, com formatação JSON na forma:
+#   { 'n': numero }
 
 from flask import Flask, request
 from fibo import Fibo
@@ -11,13 +14,13 @@ app = Flask("Fibonacci") # Aqui nomeio a aplicação como "Fibonacci"
 # Aqui defino a rota para onde será enviado o requesição POST do protocolo HTTP
 @app.route('/fibonacci', methods= ['POST']) 
 def fibonacci():
-    #Defino a aplicação
+    #Defino a uma funcionalidade da aplicação
 
-    number = request.get_json() # Converte o formato JSON para dicionário 
+    number = request.get_json() # Converte os dados recebido em fomrato JSON para um dicionário 
 
-    n = number['n'] # Extra o valor n do termo
+    n = number['n'] # Extrai o valor n do termo
 
-    n_termo = Fibo(n) #Calcula o termo 
+    n_termo = Fibo(n) # Calcula o termo n 
 
     resposta = dict(termo = n_termo) # Cria um dicionário {'termo': n_termo}
 
