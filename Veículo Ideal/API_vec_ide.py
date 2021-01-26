@@ -6,7 +6,7 @@ from veiculo_ideal import vec_ide
 
 app = Flask("Acha Veículo")
 
-@app.route('/veiculoideal', methods=['POST'])
+@app.route('/veiculoideal', methods=['POST']) # /veiculoideal é o final do URL para onde devem ser enviados request em método POST apenas
 def veiculo_ideal():
 
     itens = request.get_json() # Converte os dados recebido em fomrato JSON para um dicionário 
