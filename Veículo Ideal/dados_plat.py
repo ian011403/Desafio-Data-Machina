@@ -1,10 +1,10 @@
-# Nesse modulo defino as funções que transferem os dados dos veiculos
+# Nesse módu defino as funções que transferem os dados dos veiculos
 # de cada plataforma para a função vec_ide que resolve o problema do
 # veiculo ideal.
 
 from classes_vec_ide import Veiculo, Plataforma
 
-def lista_lala():
+def lista_lala() -> Plataforma:
 
     """ Aqui são instânciados os objetos Veiculo da plataforma Lala. Esses objetos são
         enviados numa lista """
@@ -20,7 +20,7 @@ def lista_lala():
 
     return lala
 
-def lista_ogi():
+def lista_ogi() -> Plataforma:
 
     """ Aqui são instânciados os objetos Veiculo da plataforma Ogi. Esses objetos são
         enviados numa lista """
